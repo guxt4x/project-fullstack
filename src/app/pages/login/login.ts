@@ -5,7 +5,7 @@ import { DefaultLoginLayout } from '../../components/default-login-layout/defaul
   selector: 'app-login',
   imports: [DefaultLoginLayout],
   templateUrl: './login.html',
-  styleUrl: './login.css',
+  styleUrl: './login.scss',
 })
 export class Login {
 
