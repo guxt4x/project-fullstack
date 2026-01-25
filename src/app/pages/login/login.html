@@ -1,6 +1,26 @@
 <app-default-login-layout 
-    title="Bem-vindo de volta"
+    title="Bem-vindo a Azul Airlines" 
     primaryBtnText="Entrar"
     secondaryBtnText="Cadastrar-se"
 >
+    <form [formGroup]="loginForm">
+        <app-primary-input
+            formControlName="email"
+            inputName="email"
+            type="email"
+            placeholder="E-mail"
+        >
+            <img src="/email-icon.svg">
+        </app-primary-input>
+
+        <app-primary-input
+            formControlName="password"
+            inputName="password"
+            type="password"
+            placeholder="Senha"
+        >
+            <img src="/password-icon.svg">
+        </app-primary-input>
+        <span>Esqueceu sua senha?</span>
+    </form>
 </app-default-login-layout>
