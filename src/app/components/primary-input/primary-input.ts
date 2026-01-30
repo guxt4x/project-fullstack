@@ -9,7 +9,6 @@ type InputTypes = 'text' | 'email' | 'password';
   imports: [
     ɵInternalFormsSharedModule,
     ReactiveFormsModule,
-    ɵEmptyOutletComponent
 ],
   providers: [
     {
