@@ -2,6 +2,8 @@
     title="Bem-vindo a Azul Airlines" 
     primaryBtnText="Entrar"
     secondaryBtnText="Cadastrar-se"
+    (submit)="submit()"
+    (navigate)="navigate()"
 >
     <form [formGroup]="loginForm">
         <app-primary-input
