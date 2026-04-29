@@ -1,0 +1,33 @@
+<!-- prettier-ignore -->
+<app-default-login-layout title="Faça login na Azul Airlines e garanta as melhores ofertas!" primaryBtnText="Signup Now"
+    secondaryBtnText="Login Now" (submit)="submit()" (navigate)="navigate()" [disablePrimaryBtn]="!signupForm.valid">
+    <form [formGroup]="signupForm">
+
+        <!-- prettier-ignore -->
+        <app-primary-input formControlName="name" inputName="name" type="text" placeholder="Nome">
+            <img src="/email-icon.svg">
+        </app-primary-input>
+
+        <!-- prettier-ignore -->
+        <app-primary-input formControlName="name" inputName="name" type="text" placeholder="John Doe">
+            <img src="/email-icon.svg">
+        </app-primary-input>
+
+        <!-- prettier-ignore -->
+        <app-primary-input formControlName="email" inputName="email" type="email" placeholder="E-mail">
+            <img src="/email-icon.svg">
+        </app-primary-input>
+
+        <!-- prettier-ignore -->
+        <app-primary-input formControlName="password" inputName="password" type="password" placeholder="Senha">
+            <img src="/password-icon.svg">
+        </app-primary-input>
+
+        <!-- prettier-ignore -->
+        <app-primary-input formControlName="confirmPassword" inputName="confirmPassword" type="password"
+            placeholder="Confirmar Senha">
+            <img src="/password-icon.svg">
+        </app-primary-input>
+
+    </form>
+</app-default-login-layout>
